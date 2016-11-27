@@ -14,7 +14,8 @@ SPIDER_MODULES = ['tutorial.spiders']
 NEWSPIDER_MODULE = 'tutorial.spiders'
 
 ITEM_PIPELINES = {
-    'tutorial.pipelines.TutorialPipeline': 300,
+    # 'tutorial.pipelines.TutorialPipeline': 300,
+    'tutorial.pipelines.SqlitePipeline': 301,
 }
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent

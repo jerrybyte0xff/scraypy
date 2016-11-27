@@ -9,7 +9,7 @@ class MovieSpider(scrapy.Spider):
 
     def start_requests(self):
 
-        for x in xrange(1,154):
+        for x in xrange(1,5):
             MovieListUlr="http://www.ygdy8.net/html/gndy/dyzz/list_23_%d.html" % x
             self.start_urls.append(MovieListUlr)
         for url in self.start_urls:
